@@ -6,16 +6,16 @@ This guide describes the demonstration flow and outlines the recommended structu
 
 ## 1. Verified Video Demonstration Resources
 
-The project incorporates verified demonstration video recordings:
+The project incorporates native video demonstration recordings hosted directly within the repository and website without requiring external Google Drive access:
 
 1. **Dataset Loading & Extraction Demonstration:**  
-   - Direct Link: [Google Drive Video Player](https://drive.google.com/file/d/1P-2juOgXIsgjyp1S3x7Zk0hI_UoCOwdy/view?usp=sharing)  
-   - Embedded Preview: `https://drive.google.com/file/d/1P-2juOgXIsgjyp1S3x7Zk0hI_UoCOwdy/preview`  
-   - *Topic Covered:* Ingesting the 50,000-record dataset into Tableau, configuring the Hyper data engine, validating field data types, and setting up dimension binning.
+   - Local Asset Path: [`assets/videos/ingestion_demo_web.mp4`](file:///a:/Skill%20wallet%201/assets/videos/ingestion_demo_web.mp4)  
+   - Web Player: Native HTML5 `<video>` embedded directly on the GitHub Pages demo website.
+   - *Topic Covered:* Ingesting the 50,000-record dataset into Tableau Desktop, configuring the Hyper data engine, validating field data types, and setting up dimension binning.
 
 2. **Publishing & Interactive Walkthrough Demonstration:**  
-   - Direct Link: [Google Drive Video Player](https://drive.google.com/file/d/1EGqiZxYGsHgL8gLxxz74CgU6mHn7xiiN/view?usp=sharing)  
-   - Embedded Preview: `https://drive.google.com/file/d/1EGqiZxYGsHgL8gLxxz74CgU6mHn7xiiN/preview`  
+   - Local Asset Path: [`assets/videos/walkthrough_demo_web.mp4`](file:///a:/Skill%20wallet%201/assets/videos/walkthrough_demo_web.mp4)  
+   - Web Player: Native HTML5 `<video>` embedded directly on the GitHub Pages demo website.
    - *Topic Covered:* Interactive exploration of `Dashboard 1`, cross-filtering across cities and cuisines, stepping through the 7 story points in `Story 1`, and validating author metadata on Tableau Public.
 
 ---

@@ -37,10 +37,10 @@ To ensure zero hosting costs, high availability, and seamless deployment on **Gi
      - Sizing mode dynamic container with 100% responsive width and 780px viewport height.
 
 2. **Demonstration Video Players:**
-   - Embedded via Google Drive preview endpoints:
-     - Ingestion Demo: `https://drive.google.com/file/d/1P-2juOgXIsgjyp1S3x7Zk0hI_UoCOwdy/preview`
-     - Publishing / Walkthrough Demo: `https://drive.google.com/file/d/1EGqiZxYGsHgL8gLxxz74CgU6mHn7xiiN/preview`
-   - Equipped with fallback "Open Video in New Tab" links.
+   - Embedded via native HTML5 `<video controls playsinline preload="metadata">`:
+     - Ingestion Demo: `assets/videos/ingestion_demo_web.mp4` (H.264, web-optimized faststart, 3.75 MB)
+     - Publishing / Walkthrough Demo: `assets/videos/walkthrough_demo_web.mp4` (H.264, web-optimized faststart, 7.66 MB)
+   - Equipped with direct download buttons for evaluators.
 
 ---
 

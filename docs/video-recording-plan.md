@@ -8,10 +8,10 @@ This document provides a production guide for recording or reviewing the video d
 
 The project features verified video demonstration assets hosted on Google Drive and embedded directly into the project demo website:
 
-| Video Resource | Direct Player Link | Embedded Player | Focus |
+| Video Resource | File Asset Path | Player Integration | Focus |
 | :--- | :--- | :--- | :--- |
-| **Part 1: Dataset Ingestion & Setup** | [Open in Google Drive](https://drive.google.com/file/d/1P-2juOgXIsgjyp1S3x7Zk0hI_UoCOwdy/view?usp=sharing) | `https://drive.google.com/file/d/1P-2juOgXIsgjyp1S3x7Zk0hI_UoCOwdy/preview` | Ingestion of 50,000 records, data type auditing, null checks, and Hyper engine configuration. |
-| **Part 2: Publishing & Walkthrough** | [Open in Google Drive](https://drive.google.com/file/d/1EGqiZxYGsHgL8gLxxz74CgU6mHn7xiiN/view?usp=sharing) | `https://drive.google.com/file/d/1EGqiZxYGsHgL8gLxxz74CgU6mHn7xiiN/preview` | Tableau Public publication, interactive dashboard cross-filtering, and story exploration. |
+| **Part 1: Dataset Ingestion & Setup** | `assets/videos/ingestion_demo_web.mp4` | Native HTML5 `<video>` / Direct MP4 | Ingestion of 50,000 records, data type auditing, null checks, and Hyper engine configuration. |
+| **Part 2: Publishing & Walkthrough** | `assets/videos/walkthrough_demo_web.mp4` | Native HTML5 `<video>` / Direct MP4 | Tableau Public publication, interactive dashboard cross-filtering, and story exploration. |
 
 ---
 

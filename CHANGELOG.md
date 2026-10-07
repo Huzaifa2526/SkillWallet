@@ -12,6 +12,7 @@ All notable changes to the **Food Ordering Behaviour and Consumer Trends** proje
 - **Clean Academic Portfolio Redesign**: Minimal, professional, light-themed responsive UI tailored specifically for academic and mentor evaluations.
 - **Demonstration Walkthrough Suite**: Added comprehensive video walkthrough script (`docs/video-walkthrough-script.md`) and recording guide (`docs/video-recording-plan.md`) tailored for a 5–7 minute presentation in natural Indian English.
 - **Comprehensive Documentation Suite (`/docs/`)**: Detailed guides covering project overview, methodology, data preparation, visualization design, dashboard layout, insights, performance testing, web integration, and mentor evaluation criteria.
+- **Native Web Video Players & Assets**: Integrated direct H.264 web-optimized MP4 demonstration videos (`assets/videos/ingestion_demo_web.mp4` and `assets/videos/walkthrough_demo_web.mp4`) with faststart metadata directly on the demo website, eliminating external Google Drive dependency.
 - **Repository Governance Files**: Added `LICENSE` (MIT), `.gitignore`, `CONTRIBUTING.md`, `SECURITY.md`, and `CHANGELOG.md`.
 
 ### Changed
