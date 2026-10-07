@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ordering Behaviour & Consumer Trends | Huzaifa Sheikh</title>
+  <meta name="description" content="A Structured Analysis of Choices and Habits - Interactive Tableau Business Intelligence & Analytics Project by Huzaifa Sheikh.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-badge">BI</span>
+        <span class="logo-text">Food Ordering Analytics</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#dataset">Dataset</a>
+        <a href="#visualizations">Visualizations</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#insights">Insights</a>
+        <a href="#scenarios">Scenarios</a>
+        <a href="#demo-video">Videos</a>
+        <a href="https://github.com/Huzaifa2526/SkillWallet" target="_blank" rel="noopener" class="nav-btn-github">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-pill">Tableau Public &bull; Business Intelligence Portfolio</div>
+        <h1 class="hero-title">
+          Food Ordering Behaviour &amp; Consumer Trends
+        </h1>
+        <p class="hero-subtitle">
+          A Structured Analysis of Choices and Habits across 50,000 Transactions in Major Indian Metropolitan Hubs
+        </p>
+        <div class="hero-author-meta">
+          <span>Prepared by <strong>Huzaifa Sheikh</strong></span>
+          <span class="meta-dot">&bull;</span>
+          <span>Verified Tableau Project (14/14 Tests Passed)</span>
+        </div>
+        <div class="hero-cta-group">
+          <a href="#dashboard" class="btn btn-primary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-6 6"/></svg>
+            Interactive Dashboard
+          </a>
+          <a href="https://public.tableau.com/views/FoodOrderingBehaviourandConsumerTrend_Huzaifa/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener" class="btn btn-secondary">
+            Tableau Public Live Viz
+          </a>
+          <a href="https://github.com/Huzaifa2526/SkillWallet" target="_blank" rel="noopener" class="btn btn-outline">
+            GitHub Repository
+          </a>
+          <a href="#demo-video" class="btn btn-outline">
+            Watch Walkthrough
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPI Metric Strip -->
+    <section class="kpi-strip">
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-number" data-target="50000">50,000</div>
+          <div class="kpi-label">Analyzed Orders</div>
+          <div class="kpi-desc">Verified transactional records</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-number" data-target="6">6</div>
+          <div class="kpi-label">Metropolitan Hubs</div>
+          <div class="kpi-desc">Bangalore, Delhi, Mumbai, etc.</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-number" data-target="19">19</div>
+          <div class="kpi-label">Dataset Attributes</div>
+          <div class="kpi-desc">Demographics, orders &amp; delivery</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-number" data-target="13">13</div>
+          <div class="kpi-label">Analytical Worksheets</div>
+          <div class="kpi-desc">Plus 1 Dashboard &amp; 1 Storyboard</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview & Problem Statement -->
+    <section id="overview" class="content-section">
+      <div class="section-header">
+        <div class="section-tag">Strategic Context</div>
+        <h2>Project Overview &amp; Business Objectives</h2>
+        <p class="section-lead">
+          The on-demand food delivery landscape demands precision in demand forecasting, fleet management, and consumer cohort personalization.
+        </p>
+      </div>
+
+      <div class="grid-2-col">
+        <div class="feature-card">
+          <div class="feature-icon">&#x1F4CA;</div>
+          <h3>The Business Problem</h3>
+          <p>
+            Food delivery platforms experience acute volatility in order volume, shifting customer tastes across metropolitan cities, and operational delivery bottlenecks during peak rush windows. Without consolidated intelligence, aggregators suffer from delayed fulfillments, misallocated rider fleets, and inefficient marketing spend.
+          </p>
+          <ul class="styled-list">
+            <li>Unpredictable demand spikes across lunch and dinner slots.</li>
+            <li>Regional taste divergence between North Indian and South Indian cuisines.</li>
+            <li>Fluctuating customer satisfaction scores tied directly to fulfillment delays.</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">&#x1F3AF;</div>
+          <h3>Analytical Objectives</h3>
+          <p>
+            This project ingests 50,000 empirical transactions to model consumer behavior, pinpoint regional demand hotspots, and provide actionable operational recommendations for decision makers.
+          </p>
+          <ul class="styled-list">
+            <li>Map revenue contribution across 4 meal types and 6 culinary categories.</li>
+            <li>Evaluate age-based demographic preferences across restaurant formats.</li>
+            <li>Track delivery duration distributions to safeguard customer rating benchmarks.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dataset Overview -->
+    <section id="dataset" class="content-section bg-alt">
+      <div class="section-header">
+        <div class="section-tag">Data Architecture</div>
+        <h2>Dataset Characteristics &amp; Validation</h2>
+        <p class="section-lead">
+          Built upon <code>food_ordering_behaviour_dataset.csv</code>, extracted into a high-performance Tableau Hyper engine database.
+        </p>
+      </div>
+
+      <div class="dataset-meta-box">
+        <div class="dataset-summary">
+          <div><strong>Total Transactions:</strong> 50,000 rows</div>
+          <div><strong>Total Attributes:</strong> 19 features</div>
+          <div><strong>Extract Format:</strong> Tableau Hyper Extract (SHA-256 Verified)</div>
+          <div><strong>Quality Audit:</strong> 100% Completeness, 0 Nulls in key dimensions</div>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Field Name</th>
+              <th>Data Type</th>
+              <th>Tableau Role</th>
+              <th>Sample Categories / Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>order_id</code></td>
+              <td>Integer</td>
+              <td>Dimension</td>
+              <td>Unique order transaction key (50,000 distinct)</td>
+            </tr>
+            <tr>
+              <td><code>user_id</code></td>
+              <td>Integer</td>
+              <td>Dimension</td>
+              <td>Customer identification number (8,933 distinct users)</td>
+            </tr>
+            <tr>
+              <td><code>city</code></td>
+              <td>String</td>
+              <td>Dimension</td>
+              <td>Bangalore, Delhi, Mumbai, Hyderabad, Pune, Chennai</td>
+            </tr>
+            <tr>
+              <td><code>cuisine</code></td>
+              <td>String</td>
+              <td>Dimension</td>
+              <td>North Indian, South Indian, Chinese, Italian, Mexican, Fast Food</td>
+            </tr>
+            <tr>
+              <td><code>meal_type</code></td>
+              <td>String</td>
+              <td>Dimension</td>
+              <td>Breakfast, Lunch, Dinner, Snack</td>
+            </tr>
+            <tr>
+              <td><code>restaurant_type</code></td>
+              <td>String</td>
+              <td>Dimension</td>
+              <td>Fine Dining, Fast Casual, Street Food</td>
+            </tr>
+            <tr>
+              <td><code>order_value</code></td>
+              <td>Integer</td>
+              <td>Measure</td>
+              <td>Gross transaction value in Indian Rupees (₹)</td>
+            </tr>
+            <tr>
+              <td><code>time_taken_to_order</code></td>
+              <td>Integer</td>
+              <td>Measure</td>
+              <td>Total fulfillment transit duration in minutes</td>
+            </tr>
+            <tr>
+              <td><code>rating_given</code></td>
+              <td>Integer</td>
+              <td>Measure</td>
+              <td>Customer feedback rating (1 to 5 stars)</td>
+            </tr>
+            <tr>
+              <td><code>company</code></td>
+              <td>String</td>
+              <td>Dimension</td>
+              <td>Corporate, Individual, Family, Friends ordering context</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Technical Architecture -->
+    <section id="architecture" class="content-section">
+      <div class="section-header">
+        <div class="section-tag">Pipeline Workflow</div>
+        <h2>Technical Architecture</h2>
+        <p class="section-lead">
+          Systematic data flow from raw transactional ingestion to cloud visualization and public stakeholder dissemination.
+        </p>
+      </div>
+
+      <div class="architecture-container">
+        <img src="assets/architecture.png" alt="Technical Architecture Pipeline Diagram" class="arch-diagram-img">
+        <div class="pipeline-steps">
+          <div class="pipeline-step">
+            <div class="step-num">1</div>
+            <h4>Data Ingestion</h4>
+            <p>Ingestion of 50,000 records from Google Drive / CSV into Tableau Hyper Engine.</p>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-num">2</div>
+            <h4>Data Modeling</h4>
+            <p>Null checks, data type casting, and binning for Age and Delivery Times.</p>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-num">3</div>
+            <h4>Visual Analytics</h4>
+            <p>Building 13 worksheets, executive KPI cards, and cross-filter matrices.</p>
+          </div>
+          <div class="pipeline-step">
+            <div class="step-num">4</div>
+            <h4>Cloud &amp; Web Dissemination</h4>
+            <p>Publishing to Tableau Public Cloud and embedding into GitHub Pages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visualizations Breakdown -->
+    <section id="visualizations" class="content-section bg-alt">
+      <div class="section-header">
+        <div class="section-tag">Core Analytics</div>
+        <h2>Key Visualization Breakdown</h2>
+        <p class="section-lead">
+          Nine comprehensive visualization categories providing 360-degree visibility into customer habits.
+        </p>
+      </div>
+
+      <div class="viz-cards-grid">
+        <div class="viz-card">
+          <div class="viz-badge">KPI Cards</div>
+          <h4>Executive Metrics Strip</h4>
+          <p>Instant clarity on Total Orders (50,000), Total Revenue (₹), Average Order Value, and Customer Rating benchmarks.</p>
+        </div>
+        <div class="viz-card">
+          <div class="viz-badge">Heat Map / Matrix</div>
+          <h4>Flavours Across Cities</h4>
+          <p>Cross-tabulates Gross Revenue across 6 metropolitan cities and 6 cuisines to reveal geographical taste strongholds.</p>
+        </div>
+        <div class="viz-card">
+          <div class="viz-badge">Grouped Bar Chart</div>
+          <h4>Age Cohort &amp; Dining Formats</h4>
+          <p>Correlates binned Age Groups with restaurant types, illustrating adult dominance in Fast Casual and Fine Dining.</p>
+        </div>
+        <div class="viz-card">
+          <div class="viz-badge">Matrix Breakdown</div>
+          <h4>Corporate vs Individual Meal Types</h4>
+          <p>Analyzes corporate order volume spikes during weekday lunch and dinner operational slots.</p>
+        </div>
+        <div class="viz-card">
+          <div class="viz-badge">Categorical Bar Chart</div>
+          <h4>Customer Rating by Meal Type</h4>
+          <p>Evaluates service consistency and customer ratings across Breakfast, Lunch, Dinner, and Snack meal windows.</p>
+        </div>
+        <div class="viz-card">
+          <div class="viz-badge">Revenue Bar Chart</div>
+          <h4>Revenue Contribution by Meal Type</h4>
+          <p>Quantifies Dinner and Lunch as the twin primary GMV pillars sustaining overall platform financial performance.</p>
+        </div>
+        <div class="viz-card">
+          <div class="viz-badge">Volume Distribution</div>
+          <h4>Cuisine Popularity Distribution</h4>
+          <p>Shows overwhelming platform volume affinity for North Indian and South Indian cuisines, followed by Chinese.</p>
+        </div>
+        <div class="viz-card">
+          <div class="viz-badge">Geographic Volume</div>
+          <h4>Cities by Order Volume</h4>
+          <p>Ranks metropolitan markets, confirming Bangalore and Delhi as the primary demand generation epicenters.</p>
+        </div>
+        <div class="viz-card">
+          <div class="viz-badge">Histogram</div>
+          <h4>Delivery Duration Distribution</h4>
+          <p>Displays normal distribution clustering of order fulfillment times, confirming predictable delivery SLA adherence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Tableau Dashboard -->
+    <section id="dashboard" class="content-section">
+      <div class="section-header">
+        <div class="section-tag">Live Demonstration</div>
+        <h2>Interactive Tableau Dashboard</h2>
+        <p class="section-lead">
+          Explore the live published visualization directly embedded below from Tableau Public.
+        </p>
+      </div>
+
+      <div class="dashboard-embed-wrapper">
+        <div class="dashboard-toolbar">
+          <div class="toolbar-title">
+            <span class="status-indicator"></span> Live View: <strong>Dashboard 1</strong>
+          </div>
+          <div class="toolbar-actions">
+            <a href="https://public.tableau.com/views/FoodOrderingBehaviourandConsumerTrend_Huzaifa/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+              Open Fullscreen on Tableau Public &nearr;
+            </a>
+          </div>
+        </div>
+        <div class="tableau-container">
+          <iframe 
+            src="https://public.tableau.com/views/FoodOrderingBehaviourandConsumerTrend_Huzaifa/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link&:embed=y&:showVizHome=n&:toolbar=yes" 
+            title="Food Ordering Behaviour and Consumer Trend - Tableau Dashboard" 
+            class="tableau-iframe"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Insights -->
+    <section id="insights" class="content-section bg-alt">
+      <div class="section-header">
+        <div class="section-tag">Executive Summary</div>
+        <h2>Key Analytical Insights &amp; Strategic Value</h2>
+        <p class="section-lead">
+          Empirical findings derived directly from the verified 50,000-order Tableau model.
+        </p>
+      </div>
+
+      <div class="insights-grid">
+        <div class="insight-item">
+          <div class="insight-num">01</div>
+          <h4>Bangalore &amp; Delhi Lead Order Volume</h4>
+          <p>Bangalore records the single highest order volume, closely trailed by Delhi and Mumbai. Rider fleet allocation and dark-store onboarding generate the highest return in these primary hubs.</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-num">02</div>
+          <h4>Indian Regional Cuisines Dominate Billing</h4>
+          <p>North Indian and South Indian cuisines represent the dominant culinary categories across both order count and total gross billing across all six metropolitan areas.</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-num">03</div>
+          <h4>Dinner &amp; Lunch Anchor Platform GMV</h4>
+          <p>Dinner represents the largest gross revenue contributor, with Lunch as the secondary peak. Premium delivery slots and promotional meal combos are best monetized during these windows.</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-num">04</div>
+          <h4>Adult Consumers Drive Higher Basket Value</h4>
+          <p>Working adults and mature professionals (ages 21–40+) generate the core volume of orders and show high affinity for Fast Casual and Fine Dining segments.</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-num">05</div>
+          <h4>Corporate Orders Spike at Midday</h4>
+          <p>Orders categorized as corporate/office catering surge predictably during lunch hours with larger basket sizes, pointing toward high-potential B2B team lunch subscriptions.</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-num">06</div>
+          <h4>Delivery Times Exhibit SLA Consistency</h4>
+          <p>Delivery durations cluster tightly around predictable norms with minimal tail-end delays, directly correlating with sustained positive customer satisfaction ratings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stakeholder Scenarios -->
+    <section id="scenarios" class="content-section">
+      <div class="section-header">
+        <div class="section-tag">Real-World Application</div>
+        <h2>Stakeholder Scenarios</h2>
+        <p class="section-lead">
+          How diverse cross-functional roles extract tangible decision support from this analytics solution.
+        </p>
+      </div>
+
+      <div class="scenarios-grid">
+        <div class="scenario-card">
+          <div class="scenario-role">Scenario 1 &bull; Business Analyst</div>
+          <h3>Rahul Sharma</h3>
+          <p class="scenario-context">Evaluates commercial performance, customer acquisition efficiency, and cuisine demand shifts.</p>
+          <div class="scenario-impact">
+            <strong>Key Benefit:</strong> Utilizes the City vs. Cuisine revenue matrix to reallocate digital advertising budgets toward high-margin Indian regional dinners in Tier-1 cities.
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <div class="scenario-role">Scenario 2 &bull; Operations Manager</div>
+          <h3>Priya Mehta</h3>
+          <p class="scenario-context">Responsible for driver fleet dispatching, transit SLA adherence, and restaurant prep efficiency.</p>
+          <div class="scenario-impact">
+            <strong>Key Benefit:</strong> Employs the delivery time distribution histogram to model peak driver demand between 19:30 and 22:00, mitigating transit bottlenecks.
+          </div>
+        </div>
+
+        <div class="scenario-card">
+          <div class="scenario-role">Scenario 3 &bull; End Customer</div>
+          <h3>Neha Reddy</h3>
+          <p class="scenario-context">A frequent app user seeking rapid delivery speed, fair delivery fees, and consistent meal quality.</p>
+          <div class="scenario-impact">
+            <strong>Key Benefit:</strong> Benefits from optimized restaurant recommendation feeds and dependable fulfillment SLAs, leading to sustained 4.5+ star service satisfaction.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demonstration Video Section -->
+    <section id="demo-video" class="content-section bg-alt">
+      <div class="section-header">
+        <div class="section-tag">Project Demonstration</div>
+        <h2>Video Walkthroughs &amp; Demonstrations</h2>
+        <p class="section-lead">
+          Verified video demonstrations showcasing dataset loading, extract configuration, and interactive dashboard exploration.
+        </p>
+      </div>
+
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-header">
+            <h4>Part 1: Dataset Ingestion &amp; Extract Setup</h4>
+            <a href="https://drive.google.com/file/d/1P-2juOgXIsgjyp1S3x7Zk0hI_UoCOwdy/view?usp=sharing" target="_blank" rel="noopener" class="video-link">
+              Open Video &nearr;
+            </a>
+          </div>
+          <div class="video-player-wrapper">
+            <iframe 
+              src="https://drive.google.com/file/d/1P-2juOgXIsgjyp1S3x7Zk0hI_UoCOwdy/preview" 
+              title="Dataset Loading Demo" 
+              class="video-iframe" 
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-footer">
+            Covers dataset loading, data type auditing, and Hyper extraction in Tableau Desktop.
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-header">
+            <h4>Part 2: Publishing &amp; Dashboard Walkthrough</h4>
+            <a href="https://drive.google.com/file/d/1EGqiZxYGsHgL8gLxxz74CgU6mHn7xiiN/view?usp=sharing" target="_blank" rel="noopener" class="video-link">
+              Open Video &nearr;
+            </a>
+          </div>
+          <div class="video-player-wrapper">
+            <iframe 
+              src="https://drive.google.com/file/d/1EGqiZxYGsHgL8gLxxz74CgU6mHn7xiiN/preview" 
+              title="Publishing and Dashboard Walkthrough" 
+              class="video-iframe" 
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-footer">
+            Covers Tableau Public cloud publication, interactive dashboard cross-filtering, and story navigation.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Documentation & Resources -->
+    <section id="docs" class="content-section">
+      <div class="section-header">
+        <div class="section-tag">Project Documentation</div>
+        <h2>Comprehensive Technical Documentation</h2>
+        <p class="section-lead">
+          Detailed technical guides authored for academic and mentor project evaluation.
+        </p>
+      </div>
+
+      <div class="docs-grid">
+        <a href="https://github.com/Huzaifa2526/SkillWallet/blob/main/docs/project-overview.md" target="_blank" rel="noopener" class="doc-item">
+          <div class="doc-icon">&#x1F4D6;</div>
+          <h4>Project Overview</h4>
+          <p>Problem context, target personas, and technology stack.</p>
+        </a>
+        <a href="https://github.com/Huzaifa2526/SkillWallet/blob/main/docs/methodology.md" target="_blank" rel="noopener" class="doc-item">
+          <div class="doc-icon">&#x2699;</div>
+          <h4>Methodology</h4>
+          <p>Analytical lifecycle, formulas, and dimensions.</p>
+        </a>
+        <a href="https://github.com/Huzaifa2526/SkillWallet/blob/main/docs/data-preparation.md" target="_blank" rel="noopener" class="doc-item">
+          <div class="doc-icon">&#x1F5C3;</div>
+          <h4>Data Preparation</h4>
+          <p>Complete 19-attribute field dictionary &amp; binning logic.</p>
+        </a>
+        <a href="https://github.com/Huzaifa2526/SkillWallet/blob/main/docs/visualizations.md" target="_blank" rel="noopener" class="doc-item">
+          <div class="doc-icon">&#x1F4CA;</div>
+          <h4>Visualizations Catalog</h4>
+          <p>Detailed analysis of all 9 core chart categories.</p>
+        </a>
+        <a href="https://github.com/Huzaifa2526/SkillWallet/blob/main/docs/dashboard.md" target="_blank" rel="noopener" class="doc-item">
+          <div class="doc-icon">&#x1F5A5;</div>
+          <h4>Dashboard &amp; Story</h4>
+          <p>Layout architecture and the 2-minute mentor walkthrough.</p>
+        </a>
+        <a href="https://github.com/Huzaifa2526/SkillWallet/blob/main/docs/insights.md" target="_blank" rel="noopener" class="doc-item">
+          <div class="doc-icon">&#x1F4A1;</div>
+          <h4>Business Insights</h4>
+          <p>Strategic takeaways and operational recommendations matrix.</p>
+        </a>
+        <a href="https://github.com/Huzaifa2526/SkillWallet/blob/main/docs/performance-testing.md" target="_blank" rel="noopener" class="doc-item">
+          <div class="doc-icon">&#x2705;</div>
+          <h4>Performance Testing</h4>
+          <p>14-point test suite results and web performance benchmarks.</p>
+        </a>
+        <a href="https://github.com/Huzaifa2526/SkillWallet/blob/main/docs/evaluation-checklist.md" target="_blank" rel="noopener" class="doc-item">
+          <div class="doc-icon">&#x2611;</div>
+          <h4>Evaluation Checklist</h4>
+          <p>Comprehensive mentor evaluation criteria and verification status.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Food Ordering Behaviour and Consumer Trends</h3>
+          <p>A Structured Business Intelligence and Visual Analytics Project by <strong>Huzaifa Sheikh</strong>.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://public.tableau.com/views/FoodOrderingBehaviourandConsumerTrend_Huzaifa/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" rel="noopener">Tableau Public</a>
+          <a href="https://github.com/Huzaifa2526/SkillWallet" target="_blank" rel="noopener">GitHub Repository</a>
+          <a href="https://github.com/Huzaifa2526/SkillWallet/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Huzaifa Sheikh. Released under the MIT License.</p>
+        <p>Verified against 14 automated validation checks. Bit-for-bit extract integrity preserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
