@@ -1,8 +1,34 @@
-# Large backup files
+# Large backup files & binaries
 BACKUP/
+*.exe
+*.zip
+*.rar
+*.tar.gz
 
-# Python cache & temp
+# Python cache & virtual environments
 __pycache__/
 *.pyc
-*.tmp
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Tableau temporary & recovery files
+*.hyper.temp
+TableauTemp/
+*.twb~
+*.tfl~
+
+# IDE & OS temporary files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Agent & system scratch logs
 .system_generated/
+*.log
+*.tmp
