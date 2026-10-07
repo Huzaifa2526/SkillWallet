@@ -1,9 +1,9 @@
-import zipfile, xml.etree.ElementTree as ET, hashlib, io
+import zipfile, xml.etree.ElementTree as ET, hashlib, io, sys
 
 orig_twbx = r'a:\Skill wallet 1\BACKUP\Original_Workbook.twbx'
 new_twbx = r'a:\Skill wallet 1\Huzaifa_Tableau_Project\Huzaifa_Sheikh_Food_Ordering_Behaviour_and_Consumer_Trend.twbx'
 
-print("=== WORKBOOK VALIDATION ===")
+print("=== FINAL WORKBOOK VALIDATION ===")
 
 with zipfile.ZipFile(orig_twbx, 'r') as zf_orig, zipfile.ZipFile(new_twbx, 'r') as zf_new:
     # 1. Zip test
@@ -22,7 +22,7 @@ with zipfile.ZipFile(orig_twbx, 'r') as zf_orig, zipfile.ZipFile(new_twbx, 'r') 
     new_hash = hashlib.sha256(new_hyper_data).hexdigest()
     
     assert orig_hash == new_hash, "Hyper extract differs!"
-    print(f"[PASS] Hyper extract integrity: 100% bit-for-bit match (SHA256: {orig_hash[:16]}...)")
+    print(f"[PASS] Hyper extract integrity: 100% bit-for-bit match (SHA256: {orig_hash})")
 
     # 3. XML parsing & structure
     orig_twb_data = zf_orig.read('Food Ordering Behaviour and Consumer Trend.twb')
@@ -62,4 +62,4 @@ with zipfile.ZipFile(orig_twbx, 'r') as zf_orig, zipfile.ZipFile(new_twbx, 'r') 
     assert orig_calcs == new_calcs, "Calculation formulas do not match!"
     print(f"[PASS] Calculation formulas: All {len(new_calcs)} intact and identical")
 
-print("\nALL 14 VALIDATION CRITERIA PASSED.")
+print("\nALL 14 VALIDATION CRITERIA VERIFIED AND PASSED SUCCESSFULLY.")
