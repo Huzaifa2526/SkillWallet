@@ -10,7 +10,7 @@
 
 ### Quick Links & Navigation
 
-| [Live Demo Website](https://huzaifa2526.github.io/SkillWallet/) | [Tableau Public Live Viz](https://public.tableau.com/views/FoodOrderingBehaviourandConsumerTrend_Huzaifa/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) | [GitHub Repository](https://github.com/Huzaifa2526/SkillWallet) | [Demonstration Video](https://drive.google.com/file/d/1EGqiZxYGsHgL8gLxxz74CgU6mHn7xiiN/view?usp=sharing) | [Documentation Suite](docs/) |
+| [Live Demo Website](https://huzaifa2526.github.io/SkillWallet/) | [Tableau Public Live Viz](https://public.tableau.com/views/FoodOrderingBehaviourandConsumerTrend_Huzaifa/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) | [GitHub Repository](https://github.com/Huzaifa2526/SkillWallet) | [Native Video Player](https://huzaifa2526.github.io/SkillWallet/#video) | [Documentation Suite](docs/) |
 | :---: | :---: | :---: | :---: | :---: |
 
 ---
@@ -186,12 +186,12 @@ The analytical workbook incorporates nine major visualization categories:
 
 ## 12. Project Demonstration
 
-The project includes verified video demonstrations providing an end-to-end walkthrough of the data engineering, Tableau dashboard exploration, and web portfolio review:
+The project includes native video demonstrations providing an end-to-end walkthrough of the data engineering, Tableau dashboard exploration, and web portfolio review without requiring external Google Drive access:
 
-| Video Demonstration | Duration | Video Link & Player | Scope & Topics Covered |
+| Video Demonstration | Duration | Native Player / Direct Access | Scope & Topics Covered |
 | :--- | :---: | :--- | :--- |
-| **Part 1: Ingestion & Hyper Setup** | ~4 min | [Watch Dataset Loading Demo &nearr;](https://drive.google.com/file/d/1P-2juOgXIsgjyp1S3x7Zk0hI_UoCOwdy/view?usp=sharing) | Ingestion of 50,000 records, data type auditing, null checks, and Hyper engine extraction in Tableau Desktop. |
-| **Part 2: Publishing & Walkthrough** | ~6 min | [Watch Dashboard Walkthrough Demo &nearr;](https://drive.google.com/file/d/1EGqiZxYGsHgL8gLxxz74CgU6mHn7xiiN/view?usp=sharing) | Tableau Public cloud deployment, interactive cross-filtering on `Dashboard 1`, story navigation, and author verification. |
+| **Part 1: Ingestion & Hyper Setup** | ~4 min | [Watch in Web Player &nearr;](https://huzaifa2526.github.io/SkillWallet/#video) &bull; [`assets/videos/ingestion_demo_web.mp4`](assets/videos/ingestion_demo_web.mp4) | Ingestion of 50,000 records, data type auditing, null checks, and Hyper engine extraction in Tableau Desktop. |
+| **Part 2: Publishing & Walkthrough** | ~6 min | [Watch in Web Player &nearr;](https://huzaifa2526.github.io/SkillWallet/#video) &bull; [`assets/videos/walkthrough_demo_web.mp4`](assets/videos/walkthrough_demo_web.mp4) | Tableau Public cloud deployment, interactive cross-filtering on `Dashboard 1`, story navigation, and author verification. |
 
 ### Presentation & Narration Specifications
 - **Presenter:** **Huzaifa Sheikh**
