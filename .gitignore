@@ -1,0 +1,8 @@
+# Large backup files
+BACKUP/
+
+# Python cache & temp
+__pycache__/
+*.pyc
+*.tmp
+.system_generated/
