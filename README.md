@@ -184,16 +184,19 @@ The analytical workbook incorporates nine major visualization categories:
 
 ---
 
-## 12. Project Demonstration Videos
+## 12. Project Demonstration
 
-Verified demonstration recordings walk through the analytical workflow:
+The project includes verified video demonstrations providing an end-to-end walkthrough of the data engineering, Tableau dashboard exploration, and web portfolio review:
 
-- **Part 1: Ingestion & Hyper Extract Setup:**  
-  [Watch Dataset Loading Demo (Google Drive)](https://drive.google.com/file/d/1P-2juOgXIsgjyp1S3x7Zk0hI_UoCOwdy/view?usp=sharing)  
-  *Covers dataset connection, data type verification, and Hyper extract generation.*
-- **Part 2: Publishing & Interactive Dashboard Walkthrough:**  
-  [Watch Dashboard Walkthrough Demo (Google Drive)](https://drive.google.com/file/d/1EGqiZxYGsHgL8gLxxz74CgU6mHn7xiiN/view?usp=sharing)  
-  *Covers Tableau Public cloud deployment, cross-filtering, and story point exploration.*
+| Video Demonstration | Duration | Video Link & Player | Scope & Topics Covered |
+| :--- | :---: | :--- | :--- |
+| **Part 1: Ingestion & Hyper Setup** | ~4 min | [Watch Dataset Loading Demo &nearr;](https://drive.google.com/file/d/1P-2juOgXIsgjyp1S3x7Zk0hI_UoCOwdy/view?usp=sharing) | Ingestion of 50,000 records, data type auditing, null checks, and Hyper engine extraction in Tableau Desktop. |
+| **Part 2: Publishing & Walkthrough** | ~6 min | [Watch Dashboard Walkthrough Demo &nearr;](https://drive.google.com/file/d/1EGqiZxYGsHgL8gLxxz74CgU6mHn7xiiN/view?usp=sharing) | Tableau Public cloud deployment, interactive cross-filtering on `Dashboard 1`, story navigation, and author verification. |
+
+### Presentation & Narration Specifications
+- **Presenter:** **Huzaifa Sheikh**
+- **Accent & Tone:** Natural Indian English (clear, professional engineering presentation style).
+- **Presentation Guide:** See [docs/video-recording-plan.md](docs/video-recording-plan.md) for recording timeline and [docs/video-walkthrough-script.md](docs/video-walkthrough-script.md) for the complete verbatim narration script.
 
 ---
 
